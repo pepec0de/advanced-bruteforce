@@ -34,7 +34,7 @@ def bruteforceWeb(url, user, wordlist, userF, passwordF, methodF):
 	        br.form[userF] = user # web form to bruteforce
 	        br.form[passwordF] = password.strip() # web form to bruteforce
 	        br.method = methodForm # form method is set
-	        response = br.submit() # data is send
+	        response = br.submit() # data is sent
 def pChance(x): # method to print a chance based on array[]
 	for z in range(1, len(x)):
                 print "   {" + str(z) + "}--" + x[z]
